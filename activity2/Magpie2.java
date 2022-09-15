@@ -37,6 +37,11 @@ public class Magpie2
         {
             response = "Why so negative?";
         }
+        else if (statement.indexOf("Jaffe") >= 0
+                || statement.indexOf("jaffe") >= 0)
+        {
+            response = "Gimme a hit of that Jaffine.";
+        }
         else if (statement.indexOf("mother") >= 0
                 || statement.indexOf("father") >= 0
                 || statement.indexOf("sister") >= 0
@@ -45,7 +50,8 @@ public class Magpie2
             response = "Tell me more about your family.";
         }
         else if (statement.indexOf("cat") >= 0
-                || statement.indexOf("dog") >= 0)
+                || statement.indexOf("dog") >= 0
+                || statement.indexOf("fish") >= 0)
         {
             response = "I want to hear more about your pets.";
         }
