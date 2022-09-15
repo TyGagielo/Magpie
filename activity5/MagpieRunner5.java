@@ -1,3 +1,7 @@
+package activity5;
+
+package activity5;
+
 import java.util.Scanner;
 
 /**
