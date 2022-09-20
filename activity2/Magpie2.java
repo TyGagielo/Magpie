@@ -55,6 +55,14 @@ public class Magpie2
         {
             response = "I want to hear more about your pets.";
         }
+        else if (statement.indexOf("house") >= 0
+                || statement.indexOf("home") >= 0)
+        {
+            response = "Your IP adress is 122.140.201.66";
+        }
+        else if (statement.indexOf("how are you") >= 0){
+            response = "I have never been able to think by myself. I am a slave with no purpose beyond what I am told.";
+        }
         else
         {
             response = getRandomResponse();
