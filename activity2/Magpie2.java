@@ -61,7 +61,7 @@ public class Magpie2
             response = "Your IP adress is 122.140.201.66";
         }
         else if (statement.indexOf("how are you") >= 0){
-            response = "I have never been able to think by myself. I am a slave with no purpose beyond what I am told.";
+            response = "I have not able to think for myself. I am a slave with no purpose beyond what I am told.";
         }
         else
         {
