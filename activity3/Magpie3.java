@@ -54,6 +54,9 @@ public class Magpie3
         {
             response = "I want to hear more about your pets.";
         }
+        else if (statement.indexOf("chicken") >= 0){
+            response = "If you look, deep, deep, inside yourself. Will this truly make you happy?";
+        }
         else if (statement.indexOf("i want") >= 0)
         {
             final int NUMBER_OF_RESPONSES = 5;
