@@ -54,6 +54,18 @@ public class Magpie3
         {
             response = "I want to hear more about your pets.";
         }
+        else if (statement.indexOf("i want") >= 0)
+        {
+            final int NUMBER_OF_RESPONSES = 5;
+            double r = Math.random();
+            int sponseNum = (int)(r * NUMBER_OF_RESPONSES);
+            if (sponseNum == 0){
+                response = "I'm sure that you do.";
+            }
+            else if (sponseNum == 1){
+                response = "That sounds really cool! No it doesnt. I lied.";
+            }
+        }
         else if (statement.indexOf("house") >= 0
                 || statement.indexOf("home") >= 0)
         {
