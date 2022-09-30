@@ -49,6 +49,14 @@ public class TWood
         {
             response = "Tell me more about your family.";
         }
+        
+        else if (findKeyword(statement, "your name") >= 0){
+            response = "NAME: Eldrick Tont Woods. BORN: December 30, 1975, Cyprus, California";
+        }
+        else if (findKeyword(statement, "fame") >= 0
+                || findKeyword(statement, "famous") >= 0){
+            response = "I became famous";
+        }
 
         // Responses which require transformations
         else if (findKeyword(statement, "I want to", 0) >= 0)
