@@ -15,8 +15,7 @@ public class TWood
             "You don't say.",
             "Let's talk about something else. Have you seen Breaking Bad?",
             "That's not worth a response",
-            "I'm afraid I don't understand.",
-            "Sorry, I was doing ecstasy. Can you repeat?"};
+            "I'm afraid I don't understand."};
     
     public String getGreeting()
     {
@@ -55,7 +54,20 @@ public class TWood
         }
         else if (findKeyword(statement, "fame") >= 0
                 || findKeyword(statement, "famous") >= 0){
-            response = "I became famous";
+            response = "I became famous by being REALLY good at golf";
+        }
+        else if (findKeyword(statement, "your name") >= 0){
+            response = "I currently own two children.";
+        }
+        else if (findKeyword(statement, "their names") >= 0){
+            response = "I call my children, Sam and Charlie.";
+        }
+        else if (findKeyword(statement, "you live") >= 0){
+            response = "I live at: 47.481018N, 121.956482W";
+        }
+        else if (findKeyword(statement, "wife") >= 0
+                 || findKeyword(statement, "wives") >= 0){
+            response = "I have had multiple wives and cheated on some of them, that is all";
         }
 
         // Responses which require transformations
